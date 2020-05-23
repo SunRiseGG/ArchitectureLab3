@@ -1,0 +1,36 @@
+go_binary {
+  name: "server",
+  // TODO: Відкорегуйте ім'я пакета.
+  pkg: "./cmd/server",
+  //testPkg: "./cmd/server",
+  srcs: [
+    "httptools/**/*.go",
+    "signal/**/*.go",
+    "cmd/server/*.go"
+  ]
+  //srcsExclude: ["**/*_test.go"]
+}
+
+go_binary {
+  name: "lb",
+  // TODO: Відкорегуйте ім'я пакета.
+  pkg: "./cmd/lb",
+  //testPkg: "./cmd/lb",
+  srcs: [
+    "httptools/**/*.go",
+    "signal/**/*.go",
+    "cmd/lb/*.go"
+  ]
+  // TODO: Додайте запуск тестів для балансувальника.
+  //srcsExclude: ["**/*_test.go"]
+}
+
+go_binary {
+  name: "integration",
+  //pkg: "github.com/SunRiseGG/ArchitectureLab3/itegration",
+  testPkg: "github.com/SunRiseGG/ArchitectureLab3/itegration",
+  //srcs: [
+  //  "integration/*_test.go"
+  //]
+  srcsExclude: ["**/*_test.go"]
+}
