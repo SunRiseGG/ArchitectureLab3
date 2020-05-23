@@ -27,10 +27,10 @@ go_binary {
 
 go_binary {
   name: "integration",
-  //pkg: "github.com/SunRiseGG/ArchitectureLab3/integration",
+  pkg: "github.com/SunRiseGG/ArchitectureLab3/integration",
   testPkg: "github.com/SunRiseGG/ArchitectureLab3/integration",
-  //srcs: [
-  //  "integration/*_test.go"
-  //]
+  srcs: [
+    "integration/*_test.go"
+  ],
   srcsExclude: ["**/*_test.go"]
 }
