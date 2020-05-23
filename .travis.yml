@@ -8,5 +8,5 @@ env:
   GO111MODULE=on
 
 script:
-  - sudo docker system prune -a --volumes
+  - sudo docker images
   - sudo docker-compose -f docker-compose.yaml -f docker-compose.test.yaml up --exit-code-from test
