@@ -1,0 +1,5 @@
+=== RUN   Test
+OK: 1 passed
+--- PASS: Test (20.01s)
+PASS
+ok  	github.com/SunRiseGG/ArchitectureLab3/integration	(cached)
